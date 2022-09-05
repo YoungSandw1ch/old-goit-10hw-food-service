@@ -13,11 +13,12 @@
   },
   "keywords": [],
   "author": "Serhii Michailenko <sersus1991@gmail.com>",
-  "license": "ISC",
+  "license": "",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "handlebars": "^4.7.7",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
