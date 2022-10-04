@@ -1,33 +1,33 @@
 <div class='pokemon'>
-  <h2 class='pokemon__title'>Name: </h2>
-  <img class='pokemon__img' src='' alt='' width='300' height='250' />
-  <h3 class='pokemon__posttitle'>Type: </h3>
+  <h2 class='pokemon__title'>Name: {{name}}</h2>
+  <img class='pokemon__img' src='{{sprites.front_default}}' alt='{{name}}' />
+  {{#each types}}
+    <h3 class='pokemon__posttitle'>Type: {{type.name}}</h3>
+  {{/each}}
   <ul class='stats'>
     <li class='stats__item'>
       <p class='stats__text'>Weight: </p>
-      <p class='stats__value'></p>
+      <p class='stats__value'>{{weight}}</p>
     </li>
     <li class='stats__item'>
       <p class='stats__text'>Height: </p>
-      <p class='stats__value'></p>
+      <p class='stats__value'>{{height}}</p>
     </li>
-    <li class='stats__item'>
-      <p class='stats__text'>Hp: </p>
-      <p class='stats__value'></p>
-    </li>
-    <li class='stats__item'>
-      <p class='stats__text'>Defence: </p>
-      <p class='stats__value'></p>
-    </li>
-    <li class='stats__item'>
-      <p class='stats__text'>Speed: </p>
-      <p class='stats__value'></p>
-    </li>
+    {{#each stats}}
+      <li class='stats__item'>
+        <p class='stats__text'>{{stat.name}}: </p>
+        <p class='stats__value'>{{base_stat}}</p>
+      </li>
+    {{/each}}
   </ul>
 
+  <h3 class='pokemon__posttitle'>Abilities</h3>
+
   <ul class='abilities'>
-    <li class='abilities__item'>
-      <p class='abilities__text'>1</p>
-    </li>
+    {{#each abilities}}
+      <li class='abilities__item'>
+        <p class='abilities__text'>{{ability.name}}</p>
+      </li>
+    {{/each}}
   </ul>
 </div>
