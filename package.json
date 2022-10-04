@@ -1,32 +1,27 @@
 {
   "name": "old-goit-10hw-food-service",
-  "version": "2.0.0",
-  "description": "",
-  "homepage": "https://YoungSandw1ch.github.io/old-goit-10hw-food-service",
+  "version": "1.0.0",
+  "description": "тренировка роботы с rest api",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /old-goit-10hw-food-service/"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YoungSandw1ch/old-goit-10hw-food-service.git"
+    "url": "git+https://github.com/YoungSandw1ch/old-goit-10hw-food-service"
   },
   "keywords": [],
-  "author": "Serhii Michailenko <sersus1991@gmail.com>",
-  "license": "",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/YoungSandw1ch/old-goit-10hw-food-service/issues"
   },
-  "dependencies": {
-    "handlebars": "^4.7.7",
-    "modern-normalize": "^1.1.0"
-  },
+  "homepage": "https://github.com/YoungSandw1ch/old-goit-10hw-food-service#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "parcel-transformer-hbs": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "dependencies": {}
 }
