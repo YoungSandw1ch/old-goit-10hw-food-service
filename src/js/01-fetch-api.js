@@ -2,16 +2,15 @@ import '../css/common.css';
 import API from './01-api-service';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import pokemonTpl from '../templates/pokemon-card.hbs';
-// import Handlebars from 'handlebars';
-// // import makeRefs from './01-make-refs';
-// // import handlebarsHelper from './handlebars-helper';
 
-// Handlebars.registerHelper('toCapitalize', function (str) {
-//   return str.charAt(0).toUpperCase() + string.slice(1);
-// });
+//======NH: dont work HBS custom helpers, but they registered========
+// import Handlebars from 'handlebars';
+
+// Handlebars.registerHelper('toCapitalize', toCapitalize);
 
 // console.log(Handlebars);
-// console.log(toCapitalize);
+// console.log(Handlebars.helpers.toCapitalize);
+//===================================================================
 
 const refs = {
   form: document.querySelector('.form'),
@@ -32,9 +31,6 @@ function onSubmit(e) {
 function renderMarkup(pokemon) {
   const pokemonMarkup = pokemonTpl(pokemon);
 
-  console.log(pokemon);
-  console.log(pokemonMarkup);
-  console.log(refs.container);
   refs.container.innerHTML = pokemonMarkup;
 }
 
@@ -49,4 +45,8 @@ function fetchError(error) {
       timeout: 5000,
     },
   );
+}
+
+function toCapitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
