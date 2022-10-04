@@ -30,7 +30,6 @@ function onSubmit(e) {
 
 function renderMarkup(pokemon) {
   const pokemonMarkup = pokemonTpl(pokemon);
-
   refs.container.innerHTML = pokemonMarkup;
 }
 
