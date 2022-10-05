@@ -10,6 +10,7 @@ import pokemonTpl from '../templates/pokemon-card.hbs';
 
 // console.log(Handlebars);
 // console.log(Handlebars.helpers.toCapitalize);
+
 //===================================================================
 
 const refs = {
