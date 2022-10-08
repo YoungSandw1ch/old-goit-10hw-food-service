@@ -1,4 +1,4 @@
-// import '../css/common.css';
+import '../css/common.css';
 import API from './01-api-service.js';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import pokemonTpl from '../templates/pokemon-card.hbs';
