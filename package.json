@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build  src/*.html",
+    "build": "parcel build  src/*.html --public-url /old-goit-10hw-food-service",
     "postbuild": "gh-pages -d dist"
   },
   "repository": {
