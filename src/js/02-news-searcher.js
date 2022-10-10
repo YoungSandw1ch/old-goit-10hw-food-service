@@ -65,6 +65,7 @@ function resetSearchQuery() {
   newsFetcher.query = '';
 }
 
+//=====================================
 // function toggleBtnSpinner(form) {
 //   const searchBtn = form.elements.btn;
 //   const spinner = searchBtn.firstElementChild;
