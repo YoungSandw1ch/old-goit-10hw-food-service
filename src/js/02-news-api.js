@@ -18,7 +18,8 @@ export default class FetchNewsService {
       options,
     )
       .then(response => response.json())
-      .then(({ articles }) => articles);
+      .then(({ articles }) => articles)
+      .catch(console.log);
   }
 
   get query() {
